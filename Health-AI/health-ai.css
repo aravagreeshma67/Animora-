@@ -1,874 +1,600 @@
- /* =========================================
-   ANIMORA - HEALTH AI
-   Pink + Warm White Theme
-========================================= */
+ /* =========================================================
+   INNER HEALTH AI PAGES
+   ========================================================= */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
+.page-container {
     background: #fcfaf8;
-    color: #26384a;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    min-height: calc(100vh - 90px);
+    padding-bottom: 80px;
 }
 
 
-/* =========================================
-   NAVBAR
-========================================= */
-
-.navbar {
-    width: 100%;
-    padding: 22px 6%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: #fffdfb;
-
-    border-bottom: 1px solid #eee5e6;
-
-    position: sticky;
-    top: 0;
-
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 25px;
-    font-weight: 700;
-
-    color: #26384a;
-
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
-
-.nav-links a {
-    color: #566575;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    transition: 0.25s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: #c58cae;
-}
-
-
-/* =========================================
-   HERO
-========================================= */
-
-.hero {
-    min-height: 510px;
-
-    padding: 85px 7%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: #fcfaf8;
-}
-
-.hero-content {
-    max-width: 650px;
-}
-
-.hero-badge {
-    display: inline-block;
-
-    padding: 8px 16px;
-
-    background: #f4dce6;
-
-    color: #9c6684;
-
-    border-radius: 30px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 0.5px;
-
-    margin-bottom: 22px;
-}
-
-.hero h1 {
-    font-size: 58px;
-
-    line-height: 1.08;
-
-    letter-spacing: -1.5px;
-
-    color: #26384a;
-
-    margin-bottom: 22px;
-}
-
-.hero h1 span {
-    color: #c58cae;
-}
-
-.hero p {
-    max-width: 570px;
-
-    color: #687789;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-    margin-bottom: 32px;
-}
-
-
-/* =========================================
-   BUTTONS
-========================================= */
-
-.primary-button,
-.button {
-    display: inline-block;
-
-    border: none;
-
-    padding: 14px 24px;
-
-    background: #c58cae;
-
-    color: white;
-
-    border-radius: 10px;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    transition: 0.25s ease;
-}
-
-.primary-button:hover,
-.button:hover {
-    background: #b6799e;
-
-    transform: translateY(-2px);
-}
-
-
-/* =========================================
-   HERO CIRCLE
-========================================= */
-
-.hero-image {
-    width: 270px;
-    height: 270px;
-
-    border-radius: 50%;
-
-    background: #f0d3df;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 130px;
-
-    box-shadow: 0 20px 50px rgba(160, 110, 135, 0.12);
-}
-
-
-/* =========================================
-   SECTION
-========================================= */
-
-.tools-section {
-    padding: 80px 7%;
-
-    background: #fffdfb;
-}
-
-.section-heading {
-    max-width: 720px;
-
-    margin: 0 auto 50px;
-
+/* PAGE HERO */
+
+.page-hero {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 25px 55px;
     text-align: center;
 }
 
-.section-heading > span {
-    color: #b67899;
+.page-hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    color: #26384a;
+    margin-bottom: 22px;
+}
 
-    font-size: 12px;
+.page-hero h1 span {
+    display: block;
+    color: #c58cae;
+}
 
+.page-hero p {
+    color: #59738e;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* SCANNER */
+
+.scanner-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 45px;
+    text-align: center;
+    background: #fffdfb;
+    border: 2px dashed #e3b8ca;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(197, 140, 174, 0.10);
+}
+
+.big-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.scanner-card h2,
+.symptom-card h2 {
+    color: #26384a;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.scanner-card > p,
+.card-description {
+    color: #66809b;
+    margin-bottom: 25px;
+}
+
+#petImage {
+    display: none;
+}
+
+.upload-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #f2d5e1;
+    color: #9e6688;
+    border-radius: 10px;
     font-weight: 700;
+    cursor: pointer;
+}
 
+.image-preview {
+    margin-top: 30px;
+    min-height: 180px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #faf1f5;
+    border-radius: 18px;
+}
+
+#previewImage {
+    display: none;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 15px;
+}
+
+#previewText {
+    color: #9a8190;
+}
+
+
+/* BUTTONS */
+
+.primary-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 17px 27px;
+    background: #c58cae;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background: #b4779c;
+}
+
+.dark-button {
+    display: inline-block;
+    padding: 14px 23px;
+    background: #26384a;
+    color: white;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* RESULT */
+
+.result-card {
+    display: none;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 35px;
+    text-align: center;
+    background: #f6e8ed;
+    border-radius: 22px;
+}
+
+.result-card h2 {
+    color: #26384a;
+}
+
+.result-card > p {
+    color: #607990;
+    line-height: 1.6;
+}
+
+.observation {
+    margin: 25px 0;
+    padding: 22px;
+    background: white;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.observation h3 {
+    color: #a9688d;
+    margin-bottom: 10px;
+}
+
+.observation p {
+    color: #607990;
+    line-height: 1.6;
+}
+
+
+/* CONTENT SECTION */
+
+.content-section {
+    padding: 90px 7%;
+    background: #fffdfb;
+    margin-top: 80px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-label {
+    color: #c58cae;
+    font-size: 14px;
+    font-weight: 700;
     letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
 .section-heading h2 {
-    margin: 12px 0;
-
-    font-size: 38px;
-
-    line-height: 1.2;
-
     color: #26384a;
+    font-size: 40px;
 }
 
 .section-heading h2 span {
     color: #c58cae;
 }
 
-.section-heading p {
-    color: #718092;
 
-    font-size: 15px;
-}
+/* STEPS */
 
-
-/* =========================================
-   TOOL CARDS
-========================================= */
-
-.tools-grid {
+.steps-grid {
+    max-width: 1100px;
+    margin: auto;
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 20px;
 }
 
-.tool-card {
+.step-card {
     padding: 30px;
-
-    min-height: 280px;
-
-    background: #f0cbd8;
-
-    border-radius: 22px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    transition: 0.3s ease;
+    background: #f8e9ef;
+    border-radius: 20px;
 }
 
-.tool-card:nth-child(1) {
-    background: #e9c0cf;
+.step-number {
+    color: #c58cae;
+    font-weight: 700;
+    margin-bottom: 18px;
 }
 
-.tool-card:nth-child(2) {
-    background: #f3dce5;
-}
-
-.tool-card:nth-child(3) {
-    background: #ead4dc;
-}
-
-.tool-card:nth-child(4) {
-    background: #f1dfe5;
-}
-
-.tool-card:hover {
-    transform: translateY(-7px);
-
-    box-shadow: 0 18px 35px rgba(150, 100, 125, 0.13);
-}
-
-.tool-icon {
-    width: 56px;
-    height: 56px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(255, 255, 255, 0.75);
-
-    border-radius: 15px;
-
-    font-size: 25px;
-
-    margin-bottom: 28px;
-}
-
-.tool-card h3 {
+.step-card h3 {
     color: #26384a;
-
-    font-size: 20px;
-
     margin-bottom: 10px;
 }
 
-.tool-card p {
-    color: #607080;
-
-    font-size: 14px;
-
-    line-height: 1.7;
-
-    margin-bottom: 20px;
+.step-card p {
+    color: #607990;
+    line-height: 1.6;
 }
 
-.tool-card a {
-    margin-top: auto;
 
+/* =========================================================
+   SYMPTOMS
+   ========================================================= */
+
+.symptom-card {
+    max-width: 1000px;
+    margin: auto;
+    padding: 45px;
+    background: #fffdfb;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(197, 140, 174, 0.10);
+}
+
+.symptom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.symptom-option {
+    padding: 22px;
+    background: #f8e9ef;
+    border: 2px solid transparent;
+    border-radius: 15px;
     color: #26384a;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-    font-size: 13px;
+.symptom-option:hover {
+    border-color: #c58cae;
+}
 
-    font-weight: 700;
+.symptom-option input {
+    margin-right: 8px;
+}
 
-    border-bottom: 1px solid #26384a;
+.symptom-option span {
+    margin-right: 8px;
+}
 
-    padding-bottom: 3px;
+.symptom-result {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background: #f6e8ed;
+    border-radius: 18px;
+}
 
+.symptom-result h3 {
+    color: #26384a;
+    margin-bottom: 10px;
+}
+
+.symptom-result p {
+    color: #607990;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   WELLNESS
+   ========================================================= */
+
+.wellness-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.wellness-card {
+    padding: 35px;
+    background: #f2dbe4;
+    border-radius: 22px;
     transition: 0.2s;
 }
 
-.tool-card a:hover {
-    color: #a96588;
-
-    border-color: #a96588;
+.wellness-card:hover {
+    transform: translateY(-4px);
 }
 
+.wellness-card.completed {
+    background: #e9c0cf;
+}
 
-/* =========================================
-   INFORMATION BANNER
-========================================= */
+.wellness-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
 
-.info-banner {
-    margin: 30px 7% 70px;
+.wellness-card h2 {
+    color: #26384a;
+    margin-bottom: 12px;
+}
 
-    padding: 28px 32px;
+.wellness-card > p {
+    color: #607990;
+    line-height: 1.7;
+}
 
+.check-row {
+    margin-top: 25px;
+    color: #26384a;
+    font-weight: 600;
+}
+
+.check-row input {
+    margin-right: 8px;
+}
+
+.wellness-summary {
+    max-width: 1000px;
+    margin: 50px auto 0;
+    padding: 30px;
     display: flex;
-
     align-items: center;
-
     gap: 20px;
-
     background: #f6e8ed;
-
-    border-radius: 18px;
-
-    border: 1px solid #eedce3;
+    border-radius: 20px;
 }
 
-.info-icon {
-    width: 50px;
-    height: 50px;
+.wellness-summary h2 {
+    color: #26384a;
+    margin-bottom: 8px;
+}
 
-    flex-shrink: 0;
+.wellness-summary p {
+    color: #607990;
+}
 
+
+/* =========================================================
+   REPORT
+   ========================================================= */
+
+.report-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px;
+    background: #fffdfb;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(197, 140, 174, 0.10);
+}
+
+.report-header {
     display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee5e6;
+}
 
+.pet-avatar {
+    width: 80px;
+    height: 80px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    background: #efd1df;
+    border-radius: 50%;
+    font-size: 42px;
+}
 
-    background: white;
+.report-header h2 {
+    color: #26384a;
+    font-size: 30px;
+}
 
-    border-radius: 14px;
+.report-header p {
+    color: #66809b;
+    margin-top: 5px;
+}
 
-    font-size: 23px;
+.health-status {
+    margin: 25px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #f6e8ed;
+    border-radius: 15px;
+}
+
+.health-status span {
+    color: #607990;
+}
+
+.health-status strong {
+    color: #a9688d;
+}
+
+.report-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #eee5e6;
+}
+
+.report-section h3 {
+    color: #26384a;
+    margin-bottom: 12px;
+}
+
+.report-section p {
+    color: #607990;
+    line-height: 1.7;
+}
+
+.observation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.observation-list div {
+    color: #607990;
+}
+
+.observation-list span {
+    color: #c58cae;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.report-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.report-actions .primary-button {
+    margin-top: 0;
+}
+
+.info-banner {
+    max-width: 1000px;
+    margin: 50px auto 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f6e8ed;
+    border-radius: 18px;
 }
 
 .info-banner h3 {
     color: #26384a;
-
-    margin-bottom: 5px;
-}
-
-.info-banner p {
-    color: #687789;
-
-    font-size: 13px;
-}
-
-
-/* =========================================
-   INNER PAGE
-========================================= */
-
-.page-container {
-    width: 86%;
-
-    max-width: 1100px;
-
-    margin: 65px auto;
-}
-
-
-/* =========================================
-   PAGE HEADER
-========================================= */
-
-.page-header {
-    text-align: center;
-
-    margin-bottom: 45px;
-}
-
-.page-header h1 {
-    color: #26384a;
-
-    font-size: 42px;
-
-    line-height: 1.2;
-
-    margin-bottom: 12px;
-}
-
-.page-header p {
-    color: #6e7d8c;
-
-    font-size: 15px;
-}
-
-
-/* =========================================
-   GENERAL CARD
-========================================= */
-
-.card {
-    background: #fffdfb;
-
-    padding: 30px;
-
-    border-radius: 20px;
-
-    border: 1px solid #eee3e6;
-
-    box-shadow: 0 8px 25px rgba(50, 45, 50, 0.05);
-
-    margin-bottom: 25px;
-}
-
-
-/* =========================================
-   UPLOAD AREA
-========================================= */
-
-.upload-area {
-    display: block;
-
-    border: 2px dashed #d4a8bb;
-
-    border-radius: 18px;
-
-    padding: 55px 20px;
-
-    text-align: center;
-
-    background: #fff8fa;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.upload-area:hover {
-    background: #fdf0f5;
-
-    border-color: #c58cae;
-}
-
-.upload-area input {
-    display: none;
-}
-
-.upload-icon {
-    font-size: 45px;
-
-    margin-bottom: 15px;
-}
-
-
-/* =========================================
-   IMAGE PREVIEW
-========================================= */
-
-.preview-container {
-    margin-top: 25px;
-
-    text-align: center;
-}
-
-.preview-container img {
-    max-width: 320px;
-
-    max-height: 320px;
-
-    border-radius: 18px;
-
-    display: none;
-
-    margin: auto;
-
-    box-shadow: 0 10px 25px rgba(80, 60, 70, 0.1);
-}
-
-
-/* =========================================
-   RESULT
-========================================= */
-
-.result {
-    margin-top: 25px;
-
-    padding: 25px;
-
-    background: #f8e9ee;
-
-    border-left: 4px solid #c58cae;
-
-    border-radius: 12px;
-
-    display: none;
-}
-
-.result h3 {
-    color: #26384a;
-
     margin-bottom: 8px;
 }
 
-.result p {
-    color: #687789;
+.info-banner p {
+    color: #607990;
+    line-height: 1.6;
 }
 
 
-/* =========================================
-   SYMPTOMS
-========================================= */
-
-.symptom-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 15px;
-}
-
-.symptom-option {
-    padding: 18px;
-
-    background: #fff8fa;
-
-    border: 1px solid #eadce1;
-
-    border-radius: 14px;
-
-    cursor: pointer;
-
-    color: #455566;
-
-    transition: 0.25s;
-}
-
-.symptom-option:hover {
-    background: #f8e8ee;
-
-    border-color: #d4a8bb;
-}
-
-.symptom-option input {
-    margin-right: 10px;
-
-    accent-color: #c58cae;
-}
-
-
-/* =========================================
-   WELLNESS
-========================================= */
-
-.wellness-grid {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 20px;
-}
-
-.wellness-card {
-    padding: 27px 20px;
-
-    background: #fffdfb;
-
-    border-radius: 18px;
-
-    border: 1px solid #eadfe2;
-
-    text-align: center;
-
-    box-shadow: 0 7px 20px rgba(50, 45, 50, 0.04);
-}
-
-.wellness-icon {
-    font-size: 34px;
-
-    margin-bottom: 10px;
-}
-
-.wellness-card h3 {
-    color: #26384a;
-}
-
-.wellness-card p {
-    color: #778493;
-
-    font-size: 13px;
-}
-
-.progress {
-    width: 100%;
-
-    height: 8px;
-
-    background: #eee5e8;
-
-    border-radius: 20px;
-
-    margin-top: 15px;
-
-    overflow: hidden;
-}
-
-.progress-bar {
-    height: 100%;
-
-    background: #c58cae;
-
-    border-radius: 20px;
-}
-
-
-/* =========================================
-   REPORT
-========================================= */
-
-.report-header {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    margin-bottom: 25px;
-}
-
-.pet-info {
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-}
-
-.pet-avatar {
-    width: 75px;
-    height: 75px;
-
-    background: #f0d3df;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    font-size: 38px;
-}
-
-.report-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 18px;
-
-    margin: 25px 0;
-}
-
-.report-item {
-    padding: 20px;
-
-    background: #fff7f9;
-
-    border-radius: 13px;
-
-    border: 1px solid #eee1e5;
-}
-
-.report-item small {
-    color: #778493;
-}
-
-.report-item strong {
-    display: block;
-
-    margin-top: 5px;
-
-    font-size: 18px;
-
-    color: #26384a;
-}
-
-
-/* =========================================
+/* =========================================================
    FOOTER
-========================================= */
+   ========================================================= */
 
-footer {
-    text-align: center;
-
-    padding: 30px;
-
+.footer {
+    padding: 38px 20px;
     background: #26384a;
-
     color: white;
-
-    font-size: 13px;
+    text-align: center;
 }
 
 
-/* =========================================
+/* =========================================================
    RESPONSIVE
-========================================= */
+   ========================================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
-    .tools-grid {
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .symptom-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .wellness-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero h1 {
-        font-size: 48px;
+        grid-template-columns: 1fr;
     }
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
-    .navbar {
-        flex-direction: column;
+    .navbar-container {
+        padding: 0 25px;
+    }
 
+    .navbar-right {
         gap: 18px;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 14px;
+        gap: 15px;
     }
 
-    .hero {
-        flex-direction: column;
-
-        text-align: center;
-
-        gap: 40px;
+    .nav-links a {
+        font-size: 13px;
     }
 
-    .hero h1 {
-        font-size: 39px;
+    .logo {
+        font-size: 22px;
     }
 
-    .hero p {
-        margin-left: auto;
-        margin-right: auto;
+    .page-hero h1 {
+        font-size: 38px;
     }
 
-    .hero-image {
-        width: 210px;
-        height: 210px;
-
-        font-size: 95px;
+    .scanner-card,
+    .symptom-card,
+    .report-card {
+        margin: 0 20px;
+        padding: 28px 20px;
     }
 
-    .tools-grid,
-    .wellness-grid,
-    .symptom-grid,
-    .report-grid {
+    .symptom-grid {
         grid-template-columns: 1fr;
     }
 
-    .info-banner {
-        flex-direction: column;
-
-        text-align: center;
+    .steps-grid {
+        grid-template-columns: 1fr;
     }
 
-    .report-header {
-        flex-direction: column;
-
-        gap: 20px;
-
-        align-items: flex-start;
+    .wellness-summary,
+    .info-banner {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 
-/* =========================================
+/* =========================================================
    PRINT
-========================================= */
+   ========================================================= */
 
 @media print {
 
     .navbar,
-    footer,
-    .button {
+    .footer,
+    .report-actions {
         display: none;
     }
 
-    body {
-        background: white;
+    .page-container {
+        padding: 0;
     }
 
-    .card {
+    .report-card {
         box-shadow: none;
     }
 }
