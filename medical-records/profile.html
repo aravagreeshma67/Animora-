@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Animal Profile | Animora</title>
+
+    <link
+        rel="stylesheet"
+        href="medical-records.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <span class="logo-icon">
+                🐾
+            </span>
+
+            Animora
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a
+                href="profile.html"
+                class="active"
+            >
+                Profile
+            </a>
+
+            <a href="vaccination.html">
+                Vaccinations
+            </a>
+
+            <a href="history.html">
+                Medical History
+            </a>
+
+            <a href="documents.html">
+                Documents
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="page-container">
+
+
+        <!-- PAGE TITLE -->
+
+        <section class="page-header">
+
+            <span class="page-label">
+                CARE RECORDS
+            </span>
+
+            <h1>
+                Animal Profile
+            </h1>
+
+            <p>
+                Create and manage your animal's
+                personal health information.
+            </p>
+
+        </section>
+
+
+
+        <!-- PROFILE -->
+
+        <section class="profile-layout">
+
+
+            <!-- PHOTO CARD -->
+
+            <div class="card profile-photo-card">
+
+                <div class="profile-photo">
+
+                    <span id="photoPlaceholder">
+                        🐾
+                    </span>
+
+                    <img
+                        id="profilePhotoPreview"
+                        alt="Animal photo"
+                    >
+
+                </div>
+
+
+                <label
+                    for="profilePhotoInput"
+                    class="upload-button"
+                >
+                    Upload Photo
+                </label>
+
+
+                <input
+                    type="file"
+                    id="profilePhotoInput"
+                    accept="image/*"
+                    hidden
+                >
+
+            </div>
+
+
+
+            <!-- INFORMATION CARD -->
+
+            <div class="card">
+
+                <h2>
+                    Animal Information
+                </h2>
+
+                <p class="card-description">
+                    Enter the basic information about
+                    your animal.
+                </p>
+
+
+                <div class="form-grid">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="animalName">
+                            Animal Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="animalName"
+                            placeholder="e.g. Bruno"
+                        >
+
+                    </div>
+
+
+
+                    <!-- SPECIES -->
+
+                    <div class="form-group">
+
+                        <label for="species">
+                            Species
+                        </label>
+
+                        <select id="species">
+
+                            <option value="">
+                                Select species
+                            </option>
+
+                            <option value="Dog">
+                                Dog
+                            </option>
+
+                            <option value="Cat">
+                                Cat
+                            </option>
+
+                            <option value="Rabbit">
+                                Rabbit
+                            </option>
+
+                            <option value="Horse">
+                                Horse
+                            </option>
+
+                            <option value="Cow">
+                                Cow
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- BREED -->
+
+                    <div class="form-group">
+
+                        <label for="breed">
+                            Breed
+                        </label>
+
+                        <input
+                            type="text"
+                            id="breed"
+                            placeholder="e.g. Golden Retriever"
+                        >
+
+                    </div>
+
+
+
+                    <!-- DATE OF BIRTH -->
+
+                    <div class="form-group">
+
+                        <label for="dob">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                        >
+
+                    </div>
+
+
+
+                    <!-- GENDER -->
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select id="gender">
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- WEIGHT -->
+
+                    <div class="form-group">
+
+                        <label for="weight">
+                            Weight (kg)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="weight"
+                            placeholder="e.g. 25"
+                        >
+
+                    </div>
+
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group full-width">
+
+                        <label for="notes">
+                            Additional Notes
+                        </label>
+
+                        <textarea
+                            id="notes"
+                            placeholder="Additional information about your animal..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SAVE BUTTON -->
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    onclick="saveProfile()"
+                >
+                    Save Animal Profile
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Animora · Smarter care for every animal 🐾
+
+    </footer>
+
+
+
+    <script src="medical-records.js"></script>
+
+</body>
+
+</html>
