@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Symptom Explorer - Animora</title>
+
+    <link rel="stylesheet"
+          href="health-ai.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🐾 Animora
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Health AI
+        </a>
+
+        <a href="../index.html">
+            Home
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<main class="page-container">
+
+
+    <div class="page-header">
+
+        <h1>
+            🔍 Symptom Explorer
+        </h1>
+
+        <p>
+            Select the symptoms you have noticed
+            in your pet.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+
+        <h3>
+            What symptoms are you noticing?
+        </h3>
+
+        <br>
+
+
+        <div class="symptom-grid">
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Itching"
+                >
+
+                🐾 Itching
+
+            </label>
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Loss of appetite"
+                >
+
+                🍽️ Loss of appetite
+
+            </label>
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Vomiting"
+                >
+
+                🤢 Vomiting
+
+            </label>
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Lethargy"
+                >
+
+                😴 Lethargy
+
+            </label>
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Coughing"
+                >
+
+                😮‍💨 Coughing
+
+            </label>
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Skin redness"
+                >
+
+                🔴 Skin redness
+
+            </label>
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Excessive thirst"
+                >
+
+                💧 Excessive thirst
+
+            </label>
+
+
+            <label class="symptom-option">
+
+                <input
+                    type="checkbox"
+                    value="Changes in activity"
+                >
+
+                🐕 Changes in activity
+
+            </label>
+
+
+        </div>
+
+
+        <br>
+
+
+        <button
+            class="button"
+            onclick="checkSymptoms()"
+        >
+            🔎 Explore Symptoms
+        </button>
+
+
+        <div
+            class="result"
+            id="symptomResult"
+        ></div>
+
+
+    </div>
+
+
+
+    <!-- Disclaimer -->
+
+    <div class="card">
+
+        <h3>
+            ⚠️ Important
+        </h3>
+
+        <br>
+
+        <p>
+            A symptom can have many different causes.
+            This tool provides general educational
+            information and does not diagnose diseases.
+        </p>
+
+        <br>
+
+        <p>
+            If your pet has severe, sudden, or persistent
+            symptoms, contact a veterinarian.
+        </p>
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        © 2026 Animora · Health AI
+    </p>
+
+</footer>
+
+
+
+<script src="health-ai.js"></script>
+
+</body>
+
+</html>

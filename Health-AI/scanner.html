@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Health Scanner - Animora</title>
+
+    <link rel="stylesheet"
+          href="health-ai.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🐾 Animora
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Health AI
+        </a>
+
+        <a href="../index.html">
+            Home
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- Main -->
+
+<main class="page-container">
+
+
+    <div class="page-header">
+
+        <h1>
+            📷 AI Health Scanner
+        </h1>
+
+        <p>
+            Upload an image of your pet to explore
+            possible visible health observations.
+        </p>
+
+    </div>
+
+
+
+    <!-- Upload Card -->
+
+    <div class="card">
+
+        <label class="upload-area">
+
+            <div class="upload-icon">
+                📸
+            </div>
+
+            <h3>
+                Upload Pet Image
+            </h3>
+
+            <p>
+                Click here to select an image
+            </p>
+
+            <input
+                type="file"
+                accept="image/*"
+                onchange="previewImage(event)"
+            >
+
+        </label>
+
+
+        <!-- Preview -->
+
+        <div class="preview-container">
+
+            <img
+                id="imagePreview"
+                alt="Pet Preview"
+            >
+
+        </div>
+
+
+        <br>
+
+
+        <div style="text-align:center;">
+
+            <button
+                class="button"
+                onclick="runHealthScan()"
+            >
+                🔍 Scan Health
+            </button>
+
+        </div>
+
+
+        <!-- Result -->
+
+        <div
+            class="result"
+            id="scanResult"
+        ></div>
+
+    </div>
+
+
+
+    <!-- Information -->
+
+    <div class="card">
+
+        <h3>
+            💡 How it works
+        </h3>
+
+        <br>
+
+        <p>
+            1. Upload a clear image of your pet.
+        </p>
+
+        <p>
+            2. Animora analyzes visible information
+            in the demonstration interface.
+        </p>
+
+        <p>
+            3. Possible observations are displayed.
+        </p>
+
+        <p>
+            4. Consult a veterinarian for actual diagnosis.
+        </p>
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        © 2026 Animora · Health AI
+    </p>
+
+</footer>
+
+
+
+<script src="health-ai.js"></script>
+
+</body>
+
+</html>
