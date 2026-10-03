@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Medical History | Animora</title>
+
+    <link
+        rel="stylesheet"
+        href="medical-records.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <span class="logo-icon">
+                🐾
+            </span>
+
+            Animora
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="vaccination.html">
+                Vaccinations
+            </a>
+
+            <a
+                href="history.html"
+                class="active"
+            >
+                Medical History
+            </a>
+
+            <a href="documents.html">
+                Documents
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="page-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <span class="page-label">
+                CARE RECORDS
+            </span>
+
+            <h1>
+                Medical History
+            </h1>
+
+            <p>
+                Record illnesses, treatments, symptoms
+                and important veterinary visits.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= ADD MEDICAL RECORD ================= -->
+
+        <section class="card">
+
+            <h2>
+                Add Medical Record
+            </h2>
+
+            <p class="card-description">
+                Add details about a previous or current
+                medical condition.
+            </p>
+
+
+            <form id="historyForm">
+
+
+                <div class="form-grid">
+
+
+                    <!-- CONDITION -->
+
+                    <div class="form-group">
+
+                        <label for="condition">
+                            Condition / Illness
+                        </label>
+
+                        <input
+                            type="text"
+                            id="condition"
+                            placeholder="e.g. Skin infection"
+                        >
+
+                    </div>
+
+
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label for="historyDate">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="historyDate"
+                        >
+
+                    </div>
+
+
+
+                    <!-- SYMPTOMS -->
+
+                    <div class="form-group full-width">
+
+                        <label for="symptoms">
+                            Symptoms
+                        </label>
+
+                        <textarea
+                            id="symptoms"
+                            placeholder="Describe the symptoms..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- TREATMENT -->
+
+                    <div class="form-group">
+
+                        <label for="treatment">
+                            Treatment
+                        </label>
+
+                        <input
+                            type="text"
+                            id="treatment"
+                            placeholder="e.g. Medication and rest"
+                        >
+
+                    </div>
+
+
+
+                    <!-- VETERINARIAN -->
+
+                    <div class="form-group">
+
+                        <label for="historyVeterinarian">
+                            Veterinarian
+                        </label>
+
+                        <input
+                            type="text"
+                            id="historyVeterinarian"
+                            placeholder="Veterinarian name"
+                        >
+
+                    </div>
+
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group full-width">
+
+                        <label for="historyNotes">
+                            Notes
+                        </label>
+
+                        <textarea
+                            id="historyNotes"
+                            placeholder="Additional medical notes..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    onclick="addHistory()"
+                >
+                    + Add Medical Record
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- ================= MEDICAL HISTORY LIST ================= -->
+
+        <section class="card">
+
+            <div class="record-heading">
+
+                <h2>
+                    Previous Records
+                </h2>
+
+            </div>
+
+
+            <div
+                id="historyList"
+                class="history-list"
+            >
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        🩺
+                    </div>
+
+                    <p>
+                        No medical history records yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Animora · Smarter care for every animal 🐾
+
+    </footer>
+
+
+
+    <script src="medical-records.js"></script>
+
+</body>
+
+</html>

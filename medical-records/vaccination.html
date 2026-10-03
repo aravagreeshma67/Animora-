@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Vaccinations | Animora</title>
+
+    <link
+        rel="stylesheet"
+        href="medical-records.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <span class="logo-icon">
+                🐾
+            </span>
+
+            Animora
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a
+                href="vaccination.html"
+                class="active"
+            >
+                Vaccinations
+            </a>
+
+            <a href="history.html">
+                Medical History
+            </a>
+
+            <a href="documents.html">
+                Documents
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="page-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <span class="page-label">
+                CARE RECORDS
+            </span>
+
+            <h1>
+                Vaccination Records
+            </h1>
+
+            <p>
+                Keep track of your animal's vaccines,
+                vaccination dates and upcoming doses.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= ADD VACCINATION ================= -->
+
+        <section class="card">
+
+            <h2>
+                Add Vaccination
+            </h2>
+
+            <p class="card-description">
+                Add a new vaccination record for
+                your animal.
+            </p>
+
+
+            <form id="vaccinationForm">
+
+
+                <div class="form-grid">
+
+
+                    <!-- VACCINE NAME -->
+
+                    <div class="form-group">
+
+                        <label for="vaccineName">
+                            Vaccine Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="vaccineName"
+                            placeholder="e.g. Rabies"
+                        >
+
+                    </div>
+
+
+
+                    <!-- DATE GIVEN -->
+
+                    <div class="form-group">
+
+                        <label for="dateGiven">
+                            Date Given
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dateGiven"
+                        >
+
+                    </div>
+
+
+
+                    <!-- NEXT DUE -->
+
+                    <div class="form-group">
+
+                        <label for="nextDue">
+                            Next Due Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="nextDue"
+                        >
+
+                    </div>
+
+
+
+                    <!-- VETERINARIAN -->
+
+                    <div class="form-group">
+
+                        <label for="veterinarian">
+                            Veterinarian
+                        </label>
+
+                        <input
+                            type="text"
+                            id="veterinarian"
+                            placeholder="Veterinarian name"
+                        >
+
+                    </div>
+
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group full-width">
+
+                        <label for="vaccinationNotes">
+                            Notes
+                        </label>
+
+                        <textarea
+                            id="vaccinationNotes"
+                            placeholder="Additional vaccination notes..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    onclick="addVaccination()"
+                >
+                    + Add Vaccination
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- ================= VACCINATION HISTORY ================= -->
+
+        <section class="card">
+
+            <div class="record-heading">
+
+                <h2>
+                    Vaccination History
+                </h2>
+
+            </div>
+
+
+            <div
+                id="vaccinationList"
+                class="vaccination-list"
+            >
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        💉
+                    </div>
+
+                    <p>
+                        No vaccination records yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Animora · Smarter care for every animal 🐾
+
+    </footer>
+
+
+
+    <script src="medical-records.js"></script>
+
+</body>
+
+</html>

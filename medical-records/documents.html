@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Documents | Animora</title>
+
+    <link
+        rel="stylesheet"
+        href="medical-records.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <span class="logo-icon">
+                🐾
+            </span>
+
+            Animora
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="vaccination.html">
+                Vaccinations
+            </a>
+
+            <a href="history.html">
+                Medical History
+            </a>
+
+            <a
+                href="documents.html"
+                class="active"
+            >
+                Documents
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="page-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <span class="page-label">
+                CARE RECORDS
+            </span>
+
+            <h1>
+                Medical Documents
+            </h1>
+
+            <p>
+                Store important medical documents,
+                reports and veterinary records in one place.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= DOCUMENT UPLOAD ================= -->
+
+        <section class="card">
+
+            <div class="document-upload">
+
+                <div class="document-upload-icon">
+                    📄
+                </div>
+
+
+                <h3>
+                    Upload Medical Document
+                </h3>
+
+
+                <p>
+                    Add vaccination certificates,
+                    prescriptions, lab reports or
+                    veterinary documents.
+                </p>
+
+
+                <label
+                    for="documentInput"
+                    class="upload-button"
+                >
+                    Choose Document
+                </label>
+
+
+                <input
+                    type="file"
+                    id="documentInput"
+                    accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    hidden
+                >
+
+            </div>
+
+
+            <!-- ================= DOCUMENT LIST ================= -->
+
+            <div class="record-heading">
+
+                <h2>
+                    Saved Documents
+                </h2>
+
+            </div>
+
+
+            <div
+                id="documentList"
+                class="document-list"
+            >
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        📁
+                    </div>
+
+                    <p>
+                        No medical documents uploaded yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Animora · Smarter care for every animal 🐾
+
+    </footer>
+
+
+
+    <script src="medical-records.js"></script>
+
+</body>
+
+</html>
