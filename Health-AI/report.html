@@ -1,75 +1,69 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AI Health Report - Animora</title>
 
-    <link rel="stylesheet"
-          href="health-ai.css">
-
+    <link rel="stylesheet" href="health-ai.css">
 </head>
-
 
 <body>
 
+    <!-- NAVBAR -->
 
-<!-- Navigation -->
+    <header class="navbar">
 
-<nav class="navbar">
+        <div class="navbar-container">
 
-    <div class="logo">
-        🐾 Animora
-    </div>
+            <div class="navbar-right">
 
-    <div class="nav-links">
+                <a href="../index.html" class="logo">
+                    ✦ Animora
+                </a>
 
-        <a href="index.html">
-            Health AI
-        </a>
+                <nav class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="index.html" class="active">Health AI</a>
+                </nav>
 
-        <a href="../index.html">
-            Home
-        </a>
+            </div>
 
-    </div>
+        </div>
 
-</nav>
-
-
-
-<main class="page-container">
+    </header>
 
 
-    <div class="page-header">
+    <!-- REPORT -->
 
-        <h1>
-            📋 AI Health Report
-        </h1>
+    <main class="page-container">
 
-        <p>
-            A simple overview of your pet's
-            wellness information.
-        </p>
+        <section class="page-hero">
 
-    </div>
+            <div class="hero-badge">
+                AI HEALTH REPORT
+            </div>
+
+            <h1>
+                A simple view of
+                <span>their health journey.</span>
+            </h1>
+
+            <p>
+                Review this demonstration health report
+                based on your animal's information.
+            </p>
+
+        </section>
 
 
+        <!-- PET PROFILE -->
 
-    <!-- Report -->
+        <section class="report-card">
 
-    <div class="card">
-
-
-        <div class="report-header">
-
-
-            <div class="pet-info">
+            <div class="report-header">
 
                 <div class="pet-avatar">
                     🐶
@@ -82,7 +76,7 @@
                     </h2>
 
                     <p>
-                        Golden Retriever · 3 years
+                        Golden Retriever • 3 years
                     </p>
 
                 </div>
@@ -90,71 +84,13 @@
             </div>
 
 
-            <button
-                class="button"
-                onclick="printReport()"
-            >
-                🖨️ Print Report
-            </button>
+            <!-- STATUS -->
 
+            <div class="health-status">
 
-        </div>
-
-
-
-        <hr>
-
-
-
-        <!-- Pet Information -->
-
-        <div class="report-grid">
-
-
-            <div class="report-item">
-
-                <small>
-                    Pet Name
-                </small>
-
-                <strong>
-                    Buddy
-                </strong>
-
-            </div>
-
-
-            <div class="report-item">
-
-                <small>
-                    Breed
-                </small>
-
-                <strong>
-                    Golden Retriever
-                </strong>
-
-            </div>
-
-
-            <div class="report-item">
-
-                <small>
-                    Age
-                </small>
-
-                <strong>
-                    3 Years
-                </strong>
-
-            </div>
-
-
-            <div class="report-item">
-
-                <small>
-                    Activity
-                </small>
+                <span>
+                    Overall Wellness
+                </span>
 
                 <strong>
                     Good
@@ -163,162 +99,116 @@
             </div>
 
 
-            <div class="report-item">
+            <!-- SUMMARY -->
 
-                <small>
-                    Hydration
-                </small>
+            <div class="report-section">
 
-                <strong>
-                    Good
-                </strong>
+                <h3>
+                    Wellness Summary
+                </h3>
 
-            </div>
-
-
-            <div class="report-item">
-
-                <small>
-                    Nutrition
-                </small>
-
-                <strong>
-                    Good
-                </strong>
+                <p>
+                    Buddy's demonstration profile shows
+                    generally positive everyday wellness habits.
+                    Regular activity, hydration, nutrition and
+                    veterinary checkups can help maintain good health.
+                </p>
 
             </div>
 
 
-        </div>
+            <!-- OBSERVATIONS -->
+
+            <div class="report-section">
+
+                <h3>
+                    Observations
+                </h3>
+
+                <div class="observation-list">
+
+                    <div>
+                        <span>✓</span>
+                        Good daily activity
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Healthy hydration habits
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Regular meals
+                    </div>
+
+                    <div>
+                        <span>!</span>
+                        Continue routine veterinary checkups
+                    </div>
+
+                </div>
+
+            </div>
 
 
+            <!-- BUTTONS -->
 
-        <!-- Wellness Summary -->
+            <div class="report-actions">
 
-        <div class="card">
+                <button
+                    class="primary-button"
+                    onclick="window.print()">
+                    🖨️ Print Report
+                </button>
 
-            <h3>
-                💚 Wellness Summary
-            </h3>
+                <a
+                    href="index.html"
+                    class="dark-button">
+                    ← Back to Health AI
+                </a>
 
-            <br>
+            </div>
 
-            <p>
-                Buddy's current wellness information
-                indicates generally good daily activity,
-                hydration and nutrition.
-            </p>
-
-            <br>
-
-            <p>
-                Continue maintaining a balanced routine,
-                regular activity and appropriate nutrition.
-            </p>
-
-        </div>
+        </section>
 
 
+        <section class="info-banner">
 
-        <!-- Health Observation -->
+            <div class="big-icon">
+                💗
+            </div>
 
-        <div class="card">
+            <div>
 
-            <h3>
-                🔎 Health Observation
-            </h3>
+                <h3>
+                    Important
+                </h3>
 
-            <br>
+                <p>
+                    This is a demonstration report for the Animora
+                    project. It is not a medical diagnosis.
+                    Always consult a qualified veterinarian
+                    for health concerns.
+                </p>
 
-            <p>
-                No major concerns are demonstrated in
-                this sample report.
-            </p>
+            </div>
 
-            <br>
+        </section>
 
-            <p>
-                Regular veterinary check-ups are recommended
-                as part of responsible pet care.
-            </p>
-
-        </div>
-
-
-
-        <!-- Recommendation -->
-
-        <div class="card">
-
-            <h3>
-                🌱 Recommendations
-            </h3>
-
-            <br>
-
-            <p>
-                ✔ Maintain regular exercise.
-            </p>
-
-            <p>
-                ✔ Provide fresh drinking water.
-            </p>
-
-            <p>
-                ✔ Maintain balanced nutrition.
-            </p>
-
-            <p>
-                ✔ Monitor changes in behaviour.
-            </p>
-
-            <p>
-                ✔ Schedule veterinary care when required.
-            </p>
-
-        </div>
+    </main>
 
 
-    </div>
-
-
-
-    <!-- Disclaimer -->
-
-    <div class="card">
-
-        <h3>
-            ⚠️ Important Disclaimer
-        </h3>
-
-        <br>
+    <footer class="footer">
 
         <p>
-            This report is a demonstration interface
-            created for the Animora project. It does not
-            provide a veterinary diagnosis or replace
-            professional veterinary advice.
+            © 2026 Animora. For educational and demonstration purposes.
         </p>
 
-    </div>
+    </footer>
 
 
-</main>
-
-
-
-<footer>
-
-    <p>
-        © 2026 Animora · Health AI
-    </p>
-
-</footer>
-
-
-
-<script src="health-ai.js"></script>
+    <script src="health-ai.js"></script>
 
 </body>
-
 </html>
