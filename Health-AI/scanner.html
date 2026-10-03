@@ -1,179 +1,215 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Health Scanner - Animora</title>
 
-    <link rel="stylesheet"
-          href="health-ai.css">
-
+    <link rel="stylesheet" href="health-ai.css">
 </head>
-
 
 <body>
 
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="navbar-container">
 
-<!-- Navigation -->
+            <div class="navbar-right">
 
-<nav class="navbar">
+                <a href="../index.html" class="logo">
+                    ✦ Animora
+                </a>
 
-    <div class="logo">
-        🐾 Animora
-    </div>
+                <nav class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="index.html" class="active">Health AI</a>
+                </nav>
 
-    <div class="nav-links">
-
-        <a href="index.html">
-            Health AI
-        </a>
-
-        <a href="../index.html">
-            Home
-        </a>
-
-    </div>
-
-</nav>
-
-
-
-<!-- Main -->
-
-<main class="page-container">
-
-
-    <div class="page-header">
-
-        <h1>
-            📷 AI Health Scanner
-        </h1>
-
-        <p>
-            Upload an image of your pet to explore
-            possible visible health observations.
-        </p>
-
-    </div>
-
-
-
-    <!-- Upload Card -->
-
-    <div class="card">
-
-        <label class="upload-area">
-
-            <div class="upload-icon">
-                📸
             </div>
 
-            <h3>
-                Upload Pet Image
-            </h3>
+        </div>
+    </header>
+
+
+    <!-- SCANNER -->
+
+    <main class="page-container">
+
+        <section class="page-hero">
+
+            <div class="hero-badge">
+                AI HEALTH SCANNER
+            </div>
+
+            <h1>
+                Check their health.
+                <span>One simple scan.</span>
+            </h1>
 
             <p>
-                Click here to select an image
+                Upload a clear image of your pet to explore
+                possible visible health observations.
             </p>
+
+        </section>
+
+
+        <!-- UPLOAD CARD -->
+
+        <section class="scanner-card">
+
+            <div class="big-icon">
+                📷
+            </div>
+
+            <h2>
+                Upload Pet Image
+            </h2>
+
+            <p>
+                Choose a clear image of your animal.
+            </p>
+
+            <label for="petImage" class="upload-button">
+                Choose Image
+            </label>
 
             <input
                 type="file"
+                id="petImage"
                 accept="image/*"
-                onchange="previewImage(event)"
             >
 
-        </label>
+            <div class="image-preview">
 
+                <img id="previewImage" alt="Pet Preview">
 
-        <!-- Preview -->
+                <p id="previewText">
+                    Your image preview will appear here.
+                </p>
 
-        <div class="preview-container">
-
-            <img
-                id="imagePreview"
-                alt="Pet Preview"
-            >
-
-        </div>
-
-
-        <br>
-
-
-        <div style="text-align:center;">
+            </div>
 
             <button
-                class="button"
-                onclick="runHealthScan()"
-            >
+                id="scanButton"
+                class="primary-button"
+                type="button">
                 🔍 Scan Health
             </button>
 
-        </div>
+        </section>
 
 
-        <!-- Result -->
+        <!-- RESULT -->
 
-        <div
-            class="result"
-            id="scanResult"
-        ></div>
+        <section id="scanResult" class="result-card">
 
-    </div>
+            <div class="big-icon">
+                💗
+            </div>
+
+            <h2>
+                Health Observation
+            </h2>
+
+            <p>
+                The demonstration scan has identified a
+                possible visible observation.
+            </p>
+
+            <div class="observation">
+
+                <h3>
+                    Possible Skin Irritation
+                </h3>
+
+                <p>
+                    Some visible redness may be present.
+                    This result is only for demonstration
+                    purposes and is not a veterinary diagnosis.
+                </p>
+
+            </div>
+
+            <a href="../Veterinary-Care/index.html"
+               class="dark-button">
+                Consult a Veterinarian →
+            </a>
+
+        </section>
 
 
+        <!-- HOW IT WORKS -->
 
-    <!-- Information -->
+        <section class="content-section">
 
-    <div class="card">
+            <div class="section-heading">
 
-        <h3>
-            💡 How it works
-        </h3>
+                <div class="section-label">
+                    HOW IT WORKS
+                </div>
 
-        <br>
+                <h2>
+                    Simple steps.
+                    <span>Better understanding.</span>
+                </h2>
 
+            </div>
+
+
+            <div class="steps-grid">
+
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Upload</h3>
+                    <p>
+                        Upload a clear image of your pet.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Scan</h3>
+                    <p>
+                        Animora analyzes visible information
+                        in this demonstration interface.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Understand</h3>
+                    <p>
+                        Possible observations are displayed
+                        in an easy-to-understand format.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Get Care</h3>
+                    <p>
+                        Consult a qualified veterinarian
+                        for an actual diagnosis.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
         <p>
-            1. Upload a clear image of your pet.
+            © 2026 Animora. For educational and demonstration purposes.
         </p>
-
-        <p>
-            2. Animora analyzes visible information
-            in the demonstration interface.
-        </p>
-
-        <p>
-            3. Possible observations are displayed.
-        </p>
-
-        <p>
-            4. Consult a veterinarian for actual diagnosis.
-        </p>
-
-    </div>
+    </footer>
 
 
-</main>
-
-
-
-<footer>
-
-    <p>
-        © 2026 Animora · Health AI
-    </p>
-
-</footer>
-
-
-
-<script src="health-ai.js"></script>
+    <script src="health-ai.js"></script>
 
 </body>
-
 </html>
